@@ -69,9 +69,8 @@
 
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js">
-      	$(document).ready(function(){
-    	$('.sidenav').sidenav();
-  			});
+      	  var elem = document.querySelector('.sidenav');
+  		  var instance = M.Sidenav.init(elem, options);
       </script>
 
   	
