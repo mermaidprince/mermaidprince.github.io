@@ -14,7 +14,7 @@
     
  <nav>
     <div class="nav-wrapper light-blue darken-2">
-      
+      <a href=" /" class="brand-logo">Mermaid Prince</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="about.html">About Me</a></li>
@@ -34,7 +34,7 @@
        <li><a href="extra.html">Extras</a></li>
   </ul>
   <div class="container">
-  	<h1>Welcome to this construction!</h1>
+  	<h2>Welcome to this construction!</h2>
   <p>Probably some big image will be here.</p> <br>
   <p>I'm still trying to get the hang of everything right now.</p><br>
   <p>I hope to make this the place to put all my things in one place.</p><br>
@@ -66,7 +66,11 @@
         
 
       <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js">
+      	var elem = document.querySelector('.sidenav');
+ 		var instance = M.Sidenav.init(elem, options);
+      </script>
+
   	
     </body>
   </html>
