@@ -71,6 +71,14 @@
       <script type="text/javascript" src="js/materialize.min.js">
       	  var elem = document.querySelector('.sidenav');
   		  var instance = M.Sidenav.init(elem, options);
+
+  		  (function($){
+  			$(function(){
+
+    		$('.sidenav').sidenav();
+
+  }); // end of document ready
+})(jQuery); // end of jQuery name space
       </script>
 
   	
