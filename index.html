@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     
 
       <!--Import Google Icon Font-->
@@ -85,11 +84,16 @@
 
       
   <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+ 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js">
-  	var elem = document.querySelector('.sidenav');
-  	var instance = M.Sidenav.init(elem, options);</script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="js/init.js">(function($){
+  $(function(){
+
+    $('.sidenav').sidenav();
+
+  }); // end of document ready
+})(jQuery); // end of jQuery name space</script>
 
   	
     </body>
