@@ -191,7 +191,7 @@
     $('.timepicker').timepicker();
     $('.tooltipped').tooltip();
     $('select').not('.disabled').formSelect();
-    
+    $('.sidenav').sidenav();
     $('.tap-target').tapTarget();
     $('input.autocomplete').autocomplete({
       data: {"Apple": null, "Microsoft": null, "Google": 'http://placehold.it/250x250'},
@@ -242,10 +242,7 @@
       toolbarEnabled: true
     });
 
-    (function($){
-  $(function(){
-
-    $('.sidenav').sidenav();
+    
 
 
   }); // end of document ready
