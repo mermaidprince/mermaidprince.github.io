@@ -5089,13 +5089,13 @@ small {
 }
 
 .tabs .tab a:focus, .tabs .tab a:focus.active {
-  background-color: rgba(246, 178, 181, 0.2);
+  background-color: rgba(128, 216, 255, 0.2);
   outline: none;
 }
 
 .tabs .tab a:hover, .tabs .tab a.active {
-  background-color: #80d8ff!important;
-  color: #80d8ff!important;
+  background-color: rgb(128, 216, 255) !important;
+  color: rgb(128, 216, 255) !important;
 }
 
 .tabs .tab.disabled a,
