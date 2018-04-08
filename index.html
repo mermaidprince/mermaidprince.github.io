@@ -25,7 +25,10 @@
 
  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/init.js"></script>
-   <script src="js/materialize.js"> var elem = document.querySelector('.sidenav');
+   <script src="js/materialize.js"> 
+   	var elem = document.querySelector('.parallax');
+  var instance = M.Parallax.init(elem, options);
+   	var elem = document.querySelector('.sidenav');
   var instance = M.Sidenav.init(elem, options);</script>
     
  <nav>
@@ -54,7 +57,9 @@
        <li><a href="extra.html">Extras</a></li>
   </ul>
   
-   <img class="responsive-img" src="bg.png">
+    <div class="parallax-container">
+      <div class="parallax"><img src="bg.png"></div>
+    </div>
 
   <footer class="page-footer light-blue accent-3">
           
