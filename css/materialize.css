@@ -4334,6 +4334,7 @@ nav .brand-logo {
   display: inline-block;
   font-size: 2.1rem;
   padding: 0;
+  font-family: 'Playfair Display', serif;
 }
 
 nav .brand-logo.center {
@@ -4476,7 +4477,7 @@ nav .input-field label.active i {
 @media only screen and (min-width: 601px) {
   nav.nav-extended .nav-wrapper {
     min-height: 64px;
-    font-family: 'Playfair Display', serif;
+    
   }
   nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     height: 64px;
