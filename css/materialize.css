@@ -5076,7 +5076,7 @@ small {
 }
 
 .tabs .tab a {
-  color: rgba(238, 110, 115, 0.7);
+  color: rgba(179, 229, 252 0.7);
   display: block;
   width: 100%;
   height: 100%;
@@ -5089,13 +5089,13 @@ small {
 }
 
 .tabs .tab a:focus, .tabs .tab a:focus.active {
-  background-color: rgba(128, 216, 255, 0.2);
+  background-color: rgba(179, 229, 252, 0.2);
   outline: none;
 }
 
 .tabs .tab a:hover, .tabs .tab a.active {
-  background-color: rgb(128, 216, 255) !important;
-  color: rgb(128, 216, 255) !important;
+  background-color: rgb(225, 245, 254) !important;
+  color: rgb(225, 245, 254) !important;
 }
 
 .tabs .tab.disabled a,
@@ -5108,7 +5108,7 @@ small {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #03a9f4 !important;
+  background-color: #01579b !important;
   will-change: left, right;
 }
 
