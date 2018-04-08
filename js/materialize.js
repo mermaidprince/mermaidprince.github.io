@@ -4266,6 +4266,7 @@ $jscomp.polyfill = function (e, r, p, m) {
         this.tabWidth = Math.max(this.tabsWidth, this.el.scrollWidth) / this.$tabLinks.length;
       }
 
+
       /**
        * Finds right attribute for indicator based on active tab.
        * @param {cash} el
