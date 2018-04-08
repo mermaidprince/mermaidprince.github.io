@@ -5094,7 +5094,7 @@ small {
 }
 
 .tabs .tab a:hover, .tabs .tab a.active {
-  background-color: transparent;
+  background-color: #80d8ff!important;
   color: #80d8ff!important;
 }
 
@@ -5127,6 +5127,7 @@ small {
   }
   .tabs .tab a {
     padding: 0 12px;
+    color:#80d8ff!important;
   }
 }
 
