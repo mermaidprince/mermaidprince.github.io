@@ -4465,10 +4465,12 @@ nav .input-field label.active i {
   position: relative;
   height: 56px;
   z-index: 997;
+  font-family: 'Playfair Display', serif;
 }
 
 .navbar-fixed nav {
   position: fixed;
+  font-family: 'Playfair Display', serif;
 }
 
 @media only screen and (min-width: 601px) {
@@ -4481,6 +4483,7 @@ nav .input-field label.active i {
   }
   .navbar-fixed {
     height: 64px;
+    font-family: 'Playfair Display', serif;
   }
 }
 
