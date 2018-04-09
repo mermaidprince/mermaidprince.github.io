@@ -34,9 +34,8 @@ var instance = M.Collapsible.init(elem, {
 });
  
 
-  $(document).ready(function() {
-    $('.modal').modal();
-});
+  var elem = document.querySelector('.modal');
+  var instance = M.Modal.init(elem, options);
 
   var elem = document.querySelector('.sidenav');
   var instance = M.Sidenav.init(elem, options);</script>
@@ -106,19 +105,19 @@ var instance = M.Collapsible.init(elem, {
   <div class="row">
       
       
-      
-      <div id="modal1" class="modal">
+      <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
     <div class="modal-content">
-      <h4>Secret!</h4>
-      <p>Those continuing beyond this point are assumed to be 18+ and wish to see content restricted to that age group.</p>
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
     </div>
     <div class="modal-footer">
-      <a href="secret.html">That's me!</a>
-      <a href="#!">No thanks</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
-    <div class="col s1 offset-s11"><a href="#modal1">🍑</a></div>
   </div>
-</div>
 
   <footer class="page-footer light-blue accent-3">
           
