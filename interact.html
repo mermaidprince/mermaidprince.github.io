@@ -28,6 +28,10 @@
   <script src="js/init.js"></script>
    <script src="js/materialize.js"> 
   var instance = M.Tabs.init(el, options);
+ var elem = document.querySelector('.collapsible.expandable');
+var instance = M.Collapsible.init(elem, {
+  accordion: false
+});
 
   var elem = document.querySelector('.sidenav');
   var instance = M.Sidenav.init(elem, options);</script>
@@ -76,8 +80,8 @@
     </div>
     <div id="games" class="col s12">
       <div class="container">
-         <ul class="collapsibl z-depth-0">
-            <li>
+         <ul class="collapsible z-depth-0">
+            <li class="active">
               <div class="collapsible-header">New game I'm focusing on</div>
               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
             </li>

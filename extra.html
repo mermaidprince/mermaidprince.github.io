@@ -28,6 +28,14 @@
   <script src="js/init.js"></script>
    <script src="js/materialize.js"> 
   var instance = M.Tabs.init(el, options);
+  var elem = document.querySelector('.collapsible.expandable');
+var instance = M.Collapsible.init(elem, {
+  accordion: false
+});
+var elem = document.querySelector('.modal');
+  var instance = M.Modal.init(elem, options);
+  
+  var instance = M.Modal.getInstance(elem);
 
   var elem = document.querySelector('.sidenav');
   var instance = M.Sidenav.init(elem, options);</script>
@@ -78,17 +86,35 @@
         <br>
         <br>
       Link to stuff here
+        <br>
+        <br>
       </div>
     </div>
     <div id="things" class="col s12">
       <div class="container">
-      <br>
-      <br>
+        <br>
+        <br>
       Link to things here
+        <br>
+        <br>
       </div>
     </div>
   </div>
     </div>
+
+  <div class="row">
+      
+      <div class="col s1 offset-s11"><span><a href="#modal1">🍑</a></span></div>
+      <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Secret!</h4>
+      <p>Those continuing beyond this point are assumed to be 18+ and wish to see content restricted to that age group.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="secret.html">That's me!</a>
+      <a href="#!">No thanks</a>
+    </div>
+  </div>
   <footer class="page-footer light-blue accent-3">
           
             <div class="row">
