@@ -32,9 +32,8 @@
 var instance = M.Collapsible.init(elem, {
   accordion: false
 });
-var elem = document.querySelector('.modal');
+  var elem = document.querySelector('.modal');
   var instance = M.Modal.init(elem, options);
-  var instance = M.Modal.getInstance(elem);
 
   var elem = document.querySelector('.sidenav');
   var instance = M.Sidenav.init(elem, options);</script>
@@ -103,7 +102,7 @@ var elem = document.querySelector('.modal');
 
   <div class="row">
       
-      <div class="col s1 offset-s11"><span><a href="#modal1">🍑</a></span></div>
+      <div class="col s1 offset-s11"><a href="#modal1">🍑</a></div>
       
       <div id="modal1" class="modal">
     <div class="modal-content">
