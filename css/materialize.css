@@ -2724,7 +2724,6 @@ img.responsive-img,
 video.responsive-video {
   max-width: 100%;
   height: auto;
-  min-height: 700px;
 }
 
 .pagination li {
@@ -2841,6 +2840,10 @@ video.responsive-video {
           transform: translate3d(0, 0, 0);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.dummy {
+  padding-top: 29%;
 }
 
 .pin-top, .pin-bottom {
