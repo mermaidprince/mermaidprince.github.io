@@ -2727,7 +2727,7 @@ video.responsive-video {
 }
 
 img.responsive-img2 {
-  max-height: 100%;
+  max-height: 150%;
   min-height: 600;
   width: auto;
   }
