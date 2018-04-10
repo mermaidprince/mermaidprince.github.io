@@ -2726,6 +2726,11 @@ video.responsive-video {
   height: auto;
 }
 
+img.responsive-img2 {
+  max-height: 100%
+  width: auto;
+  }
+
 .pagination li {
   display: inline-block;
   border-radius: 2px;
