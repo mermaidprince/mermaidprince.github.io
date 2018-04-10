@@ -2724,7 +2724,6 @@ img.responsive-img,
 video.responsive-video {
   max-width: 100%;
   height: auto;
-  object-fit: cover;
 }
 
 .pagination li {
@@ -2844,7 +2843,7 @@ video.responsive-video {
 }
 
 .dummy {
-  padding-top: 29%
+  object-fit: cover;
 }
 
 .pin-top, .pin-bottom {
