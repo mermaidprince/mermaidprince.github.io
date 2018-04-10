@@ -2833,17 +2833,14 @@ video.responsive-video {
   position: absolute;
   left: 50%;
   bottom: 0;
-  width: auto;
-  min-width: 100%;
-  min-height: 700px;
+  object-fit: cover;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
-.dummy {
-  object-fit: cover;
+
 }
 
 .pin-top, .pin-bottom {
