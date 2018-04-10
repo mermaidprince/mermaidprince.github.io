@@ -2730,7 +2730,7 @@ img.responsive-img2 {
   max-height: 150%;
   min-height: 600;
   width: auto;
-  object-fit: contain;
+  object-fit: cover;
   }
 
 .pagination li {
