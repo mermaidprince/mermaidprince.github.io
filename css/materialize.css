@@ -2833,7 +2833,7 @@ video.responsive-video {
   position: absolute;
   left: 50%;
   bottom: 0;
-  max-width: 200%;
+  max-width: 250%;
   max-height: 200%;
   min-height: 600px;
   -webkit-transform: translate3d(0, 0, 0);
