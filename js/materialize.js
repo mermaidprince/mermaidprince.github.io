@@ -3641,11 +3641,11 @@ $jscomp.polyfill = function (e, r, p, m) {
         this.newHeight = 0;
 
         if (widthPercent > heightPercent) {
-          ratio = this.naturalHeight / this.naturalWidth;
+          ratio = this.naturalHeight / this.windowWidth;
           this.newWidth = this.naturalWidth;
           this.newHeight = this.naturalHeight;
         } else {
-          ratio = this.naturalWidth / this.naturalHeight;
+          ratio = this.naturalWidth / this.windowHeight;
           this.newWidth = this.naturalWidth;
           this.newHeight = this.naturalHeight;
         }
