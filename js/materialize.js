@@ -3646,8 +3646,8 @@ $jscomp.polyfill = function (e, r, p, m) {
           this.newHeight = this.naturalWidth * 0.9 * ratio;
         } else {
           ratio = this.originalWidth / this.originalHeight;
-          this.newWidth = this.naturalHeight * 0.9 * ratio;
-          this.newHeight = this.naturalHeight * 0.9;
+          this.newWidth = this.originalHeight * 0.9 * ratio;
+          this.newHeight = this.originalHeight * 0.9;
         }
 
         this._animateImageIn();
