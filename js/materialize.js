@@ -3634,11 +3634,10 @@ $jscomp.polyfill = function (e, r, p, m) {
         }
 
         // Resize Image
-        var ratio = 0;
+        
         var widthPercent = this.originalWidth / this.windowWidth;
         var heightPercent = this.originalHeight / this.windowHeight;
-        this.newWidth = 0;
-        this.newHeight = 0;
+        
 
         if (widthPercent > heightPercent) {
           ratio = this.originalHeight / this.originalWidth;
