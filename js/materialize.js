@@ -3635,8 +3635,8 @@ $jscomp.polyfill = function (e, r, p, m) {
 
         // Resize Image
         var ratio = 0;
-        var widthPercent = this.naturalWidth;
-        var heightPercent = this.naturalHeight;
+        var widthPercent = this.naturalWidth / this.naturalWidth;
+        var heightPercent = this.naturalHeight / this.naturalHeight;
         this.newWidth = 0;
         this.newHeight = 0;
 
@@ -3646,8 +3646,8 @@ $jscomp.polyfill = function (e, r, p, m) {
           this.newHeight = this.naturalWidth * 0.9 * ratio;
         } else {
           ratio = this.originalWidth / this.originalHeight;
-          this.newWidth = this.originalHeight * 0.9 * ratio;
-          this.newHeight = this.originalHeight * 0.9;
+          this.newWidth = this.naturalHeight * 0.9 * ratio;
+          this.newHeight = this.naturalHeight * 0.9;
         }
 
         this._animateImageIn();
