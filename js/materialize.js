@@ -3598,8 +3598,8 @@ $jscomp.polyfill = function (e, r, p, m) {
         // Set dimensions if needed
         var overlayOffset = this.$overlay[0].getBoundingClientRect();
         this.$overlay.css({
-          width: this.naturalWidth + 'px',
-          height: this.naturalHeight + 'px',
+          width: this.windowWidth + 'px',
+          height: this.windowHeight + 'px',
           left: -1 * overlayOffset.left + 'px',
           top: -1 * overlayOffset.top + 'px'
         });
@@ -3635,8 +3635,8 @@ $jscomp.polyfill = function (e, r, p, m) {
 
         // Resize Image
         var ratio = 0;
-        var widthPercent = this.originalWidth / this.windowWidth;
-        var heightPercent = this.originalHeight / this.windowHeight;
+        var widthPercent = this.originalWidth / this.naturalWidth;
+        var heightPercent = this.originalHeight / this.naturalHeight;
         this.newWidth = 0;
         this.newHeight = 0;
 
