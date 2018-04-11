@@ -3634,17 +3634,18 @@ $jscomp.polyfill = function (e, r, p, m) {
         }
 
         // Resize Image
-        
+        var ratio = 0;
         var widthPercent = this.originalWidth / this.windowWidth;
         var heightPercent = this.originalHeight / this.windowHeight;
-        
+        this.newWidth = 0;
+        this.newHeight = 0;
 
         if (widthPercent > heightPercent) {
-          ratio = this.originalHeight / this.originalWidth;
+          ratio = this.naturalHeight / this.naturalWidth;
           this.newWidth = this.naturalWidth;
           this.newHeight = this.naturalHeight;
         } else {
-          ratio = this.originalWidth / this.originalHeight;
+          ratio = this.naturalWidth / this.naturalHeight;
           this.newWidth = this.naturalWidth;
           this.newHeight = this.naturalHeight;
         }
