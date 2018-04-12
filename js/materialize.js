@@ -3632,7 +3632,7 @@ $jscomp.polyfill = function (e, r, p, m) {
             easing: 'easeOutQuad'
           });
         }
-
+        var img = document.getElementById('draggable');
     img.onload = function() {
     var width  = img.naturalWidth;
     var height = img.naturalHeight;
