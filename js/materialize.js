@@ -3525,8 +3525,8 @@ $jscomp.polyfill = function (e, r, p, m) {
     }, {
       key: "_updateVars",
       value: function _updateVars() {
-        this.windowWidth = this.naturalWidth;
-        this.windowHeight = this.naturalHeight;
+        this.windowWidth = window.innerWidth;
+        this.windowHeight = window.innerHeight;
         this.caption = this.el.getAttribute('data-caption') || "";
       }
 
