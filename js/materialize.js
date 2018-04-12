@@ -3640,11 +3640,15 @@ $jscomp.polyfill = function (e, r, p, m) {
         this.newWidth = 0;
         this.newHeight = 0;
 
-        
+        if (widthPercent > heightPercent) {
           ratio = this.originalHeight / this.originalWidth;
-          this.newWidth = this.naturalWidth;
-          this.newHeight = this.naturalHeight;
-       
+          this.newWidth = this.windowWidth * 0.9;
+          this.newHeight = this.windowWidth * 0.9 * ratio;
+        } else {
+          ratio = this.originalWidth / this.originalHeight;
+          this.newWidth = this.windowHeight * 0.9 * ratio;
+          this.newHeight = this.windowHeight * 0.9;
+        }
 
         this._animateImageIn();
 
