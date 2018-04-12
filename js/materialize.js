@@ -3435,8 +3435,8 @@ $jscomp.polyfill = function (e, r, p, m) {
           targets: this.el,
           height: [this.originalHeight, this.newHeight],
           width: [this.originalWidth, this.newWidth],
-          left: M.getDocumentScrollLeft() + this.naturalWidth,
-          top: M.getDocumentScrollTop() + this.naturalHeight,
+          left: M.getDocumentScrollLeft() + this.windowWidth / 2 - this.placeholder.offset().left - this.newWidth / 2,
+          top: M.getDocumentScrollTop() + this.windowHeight / 2 - this.placeholder.offset().top - this.newHeight / 2,
           duration: this.options.inDuration,
           easing: 'easeOutQuad',
           complete: function () {
@@ -3534,18 +3534,7 @@ $jscomp.polyfill = function (e, r, p, m) {
        * Open Materialbox
        */
 
-
-
-    },
-
-var img = document.getElementById('draggable');
-
-img.onload = function() {
-    var width  = img.naturalWidth;
-    var height = img.naturalHeight;
-}
-
-     {
+    }, {
       key: "open",
       value: function open() {
         var _this18 = this;
@@ -3609,8 +3598,8 @@ img.onload = function() {
         // Set dimensions if needed
         var overlayOffset = this.$overlay[0].getBoundingClientRect();
         this.$overlay.css({
-          width: this.naturalWidth + 'px',
-          height: this.naturalHeight + 'px',
+          width: this.windowWidth + 'px',
+          height: this.windowHeight + 'px',
           left: -1 * overlayOffset.left + 'px',
           top: -1 * overlayOffset.top + 'px'
         });
@@ -3644,12 +3633,19 @@ img.onload = function() {
           });
         }
 
+    img.onload = function() {
+    var width  = img.naturalWidth;
+    var height = img.naturalHeight;
+}
+
         // Resize Image
-       
+        var ratio = 0;
+        var widthPercent = this.originalWidth / this.windowWidth;
+        var heightPercent = this.originalHeight / this.windowHeight;
         this.newWidth = this.naturalWidth;
         this.newHeight = this.naturalHeight;
 
-       
+      
 
         this._animateImageIn();
 
