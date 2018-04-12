@@ -3524,9 +3524,9 @@ $jscomp.polyfill = function (e, r, p, m) {
 
     }, 
 
-    var img = document.getElementById('draggable');
+    var this = document.getElementById('draggable');
 
-img.onload = function() {
+this.onload = function() {
     var width  = this.naturalWidth;
     var height = this.naturalHeight;
 }
