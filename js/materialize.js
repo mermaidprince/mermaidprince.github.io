@@ -3534,7 +3534,18 @@ $jscomp.polyfill = function (e, r, p, m) {
        * Open Materialbox
        */
 
-    }, {
+
+
+    },
+
+var img = document.getElementById('draggable');
+
+img.onload = function() {
+    var width  = img.naturalWidth;
+    var height = img.naturalHeight;
+}
+
+     {
       key: "open",
       value: function open() {
         var _this18 = this;
