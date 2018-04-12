@@ -3435,8 +3435,8 @@ $jscomp.polyfill = function (e, r, p, m) {
           targets: this.el,
           height: [this.originalHeight, this.newHeight],
           width: [this.originalWidth, this.newWidth],
-          left: M.getDocumentScrollLeft() + this.naturalWidth / 2 - this.placeholder.offset().left - this.newWidth / 2,
-          top: M.getDocumentScrollTop() + this.naturalHeight / 2 - this.placeholder.offset().top - this.newHeight / 2,
+          left: M.getDocumentScrollLeft() + this.naturalWidth,
+          top: M.getDocumentScrollTop() + this.naturalHeight,
           duration: this.options.inDuration,
           easing: 'easeOutQuad',
           complete: function () {
