@@ -3525,8 +3525,8 @@ $jscomp.polyfill = function (e, r, p, m) {
     }, {
       key: "_updateVars",
       value: function _updateVars() {
-        this.windowWidth = window.innerWidth;
-        this.windowHeight = window.innerHeight;
+        this.windowWidth = this.naturalWidth;
+        this.windowHeight = this.naturalHeight;
         this.caption = this.el.getAttribute('data-caption') || "";
       }
 
@@ -3632,20 +3632,23 @@ $jscomp.polyfill = function (e, r, p, m) {
             easing: 'easeOutQuad'
           });
         }
-        var img = document.getElementById('draggable');
-    img.onload = function() {
-    var width  = img.naturalWidth;
-    var height = img.naturalHeight;
-}
 
         // Resize Image
         var ratio = 0;
         var widthPercent = this.originalWidth / this.windowWidth;
         var heightPercent = this.originalHeight / this.windowHeight;
-        this.newWidth = this.naturalWidth;
-        this.newHeight = this.naturalHeight;
+        this.newWidth = 0;
+        this.newHeight = 0;
 
-      
+        if (widthPercent > heightPercent) {
+          ratio = this.originalHeight / this.originalWidth;
+          this.newWidth = this.windowWidth * 0.9;
+          this.newHeight = this.windowWidth * 0.9 * ratio;
+        } else {
+          ratio = this.originalWidth / this.originalHeight;
+          this.newWidth = this.windowHeight * 0.9 * ratio;
+          this.newHeight = this.windowHeight * 0.9;
+        }
 
         this._animateImageIn();
 
