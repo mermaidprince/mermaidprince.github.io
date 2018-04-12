@@ -3522,7 +3522,16 @@ $jscomp.polyfill = function (e, r, p, m) {
        * Update open and close vars
        */
 
-    }, {
+    }, 
+
+    var img = document.getElementById('draggable');
+
+img.onload = function() {
+    var width  = this.naturalWidth;
+    var height = this.naturalHeight;
+}
+
+    {
       key: "_updateVars",
       value: function _updateVars() {
         this.windowWidth = this.naturalWidth;
