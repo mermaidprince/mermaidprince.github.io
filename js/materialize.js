@@ -3524,12 +3524,7 @@ $jscomp.polyfill = function (e, r, p, m) {
 
     }, 
 
-  
-
-this.onload = function() {
-    var width  = this.naturalWidth;
-    var height = this.naturalHeight;
-}
+    
 
     {
       key: "_updateVars",
