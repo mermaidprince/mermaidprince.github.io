@@ -3524,7 +3524,7 @@ $jscomp.polyfill = function (e, r, p, m) {
 
     }, 
 
-    var this = document.getElementById('draggable');
+  
 
 this.onload = function() {
     var width  = this.naturalWidth;
