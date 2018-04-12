@@ -3598,8 +3598,8 @@ $jscomp.polyfill = function (e, r, p, m) {
         // Set dimensions if needed
         var overlayOffset = this.$overlay[0].getBoundingClientRect();
         this.$overlay.css({
-          width: this.windowWidth + 'px',
-          height: this.windowHeight + 'px',
+          width: this.naturalWidth + 'px',
+          height: this.naturalHeight + 'px',
           left: -1 * overlayOffset.left + 'px',
           top: -1 * overlayOffset.top + 'px'
         });
