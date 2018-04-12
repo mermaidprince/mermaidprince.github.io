@@ -3522,11 +3522,7 @@ $jscomp.polyfill = function (e, r, p, m) {
        * Update open and close vars
        */
 
-    }, 
-
-    
-
-    {
+    }, {
       key: "_updateVars",
       value: function _updateVars() {
         this.windowWidth = this.naturalWidth;
