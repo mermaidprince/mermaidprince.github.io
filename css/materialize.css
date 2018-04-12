@@ -8314,6 +8314,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   width: 100%;
   background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .slider .slides li .caption {
